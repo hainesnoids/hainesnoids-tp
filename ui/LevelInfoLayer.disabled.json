@@ -1,0 +1,16 @@
+{
+    "children": {
+        "node": {
+            "play-button": {
+                "event": {
+                    "on-activate": {
+                        "override": true,
+                        "attributes" : {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

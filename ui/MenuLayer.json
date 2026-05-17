@@ -1,0 +1,68 @@
+{
+    "children": {
+        "node": {
+            "social-media-menu": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "bottom-menu": {
+                "attributes": {
+                    "content-size": {
+                        "width": 320,
+                        "height": 65
+                    },
+                    "update-layout": "self"
+                }
+            },
+            "more-games-menu": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "player-username": {
+                "attributes": {
+                    "position": {
+                        "x": 45,
+                        "y": 80,
+                        "anchor": {
+                            "to": "bottom-left",
+                            "relative": "parent"
+                        }
+                    }
+                }
+            },
+            "profile-menu": {
+                "attributes": {
+                    "position": {
+                        "x": 90,
+                        "y": 45,
+                        "anchor": {
+                            "to": "bottom-left",
+                            "relative": "parent"
+                        }
+                    }
+                }
+            },
+            "right-side-menu": {
+                "attributes": {
+                    "position": {
+                        "x": -40,
+                        "y": 22,
+                        "anchor": {
+                            "to": "bottom-right",
+                            "relative": "parent"
+                        }
+                    },
+                    "anchor-point": {
+                        "x": 0.5,
+                        "y": 0
+                    },
+                    "layout": {
+                        "axis-alignment": "start"
+                    }
+                }
+            }
+        }
+    }
+}

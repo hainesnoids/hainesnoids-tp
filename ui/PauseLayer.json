@@ -1,0 +1,418 @@
+{
+    "attributes": {
+        "false-opacity": 75,
+        "opacity": 0,
+        "position": {
+            "x": -300,
+            "y": 0,
+            "anchor": "self"
+        },
+        "actions": [
+            {
+                "type": "Sequence",
+                "actions": [
+                    {
+                        "type": "MoveBy",
+                        "easing": "ElasticOut",
+                        "easing-rate": 3,
+                        "duration": 0.5,
+                        "value": {
+                            "x": 300,
+                            "y": 0
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "children": {
+        "node": {
+            "background": {
+                "attributes": {
+                    "scale": {
+                        "x": 1,
+                        "y": 1
+                    },
+                    "content-size": {
+                        "width": 260,
+                        "height": 900
+                    },
+                    "rotation": 15,
+                    "position": {
+                        "x": -140,
+                        "y": 0,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    }
+                }
+            },
+            "level-name": {
+                "attributes": {
+                    "position": {
+                        "x": -100,
+                        "y": 135,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    },
+                    "scale": {
+                        "x": 0.8,
+                        "y": 0.8
+                    }
+                }
+            },
+            "center-button-menu": {
+                "attributes": {
+                    "position": {
+                        "x": -45,
+                        "y": -10,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    },
+                    "scale": 0.9,
+                    "layout": {
+                        "axis": "row",
+                        "flip-axis": false,
+                        "flip-cross-axis": true,
+                        "auto-scale": true,
+                        "allow-cross-axis-overflow": false,
+                        "gap": 0,
+                        "axis-alignment": "start",
+                        "cross-axis-alignment": "center",
+                        "cross-axis-line-alignment": "center",
+                        "ignore-invisible": true
+                    }
+                }
+            },
+            "left-button-menu": {
+                "attributes": {
+                    "visible": true,
+                    "position": {
+                        "x": 100,
+                        "y": -130,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    },
+                    "layout": {
+                        "axis": "row",
+                        "axis-alignment": "end",
+                        "flip-axis": false
+
+                    },
+                    "content-size": {
+                        "width": 280,
+                        "height": 40
+                    }
+                }
+            },
+            "right-button-menu": {
+                "attributes": {
+                    "position": {
+                        "x": -105,
+                        "y": -130,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    },
+                    "layout": {
+                        "axis": "row",
+                        "axis-alignment": "start",
+                        "flip-axis": false
+
+                    },
+                    "content-size": {
+                        "width": 280,
+                        "height": 40
+                    }
+                }
+            },
+            "music-label": {
+                "attributes": {
+                    "anchor-point": {
+                        "x": 0,
+                        "y": 0.5
+                    },
+                    "position": {
+                        "x": -228,
+                        "y": -50,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    }
+                }
+            },
+            "music-slider": {
+                "attributes": {
+                    "position": {
+                        "x": -148,
+                        "y": -65,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    },
+                    "scale": 1
+                }
+            },
+            "sfx-label": {
+                "attributes": {
+                    "anchor-point": {
+                        "x": 0,
+                        "y": 0.5
+                    },
+                    "position": {
+                        "x": -240,
+                        "y": -80,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    }
+                }
+            },
+            "sfx-slider": {
+                "attributes": {
+                    "position": {
+                        "x": -160,
+                        "y": -95,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    }
+                }
+            },
+            "normal-mode-label": {
+                "attributes": {
+                    "anchor-point": {
+                        "x": 0,
+                        "y": 0.5
+                    },
+                    "position": {
+                        "x": -225,
+                        "y": 100,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    }
+                }
+            },
+            "normal-progress-label": {
+                "attributes": {
+                    "anchor-point": {
+                        "x": 1,
+                        "y": 0.5
+                    },
+                    "position": {
+                        "x": -5,
+                        "y": 100,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    }
+                },
+                "if": [
+                    {
+                        "statement": "int(level_normal_percent) >= 100",
+                        "attributes": {
+                            "color": {
+                                "r": 192,
+                                "g": 255,
+                                "b": 192
+                            }
+                        }
+                    }
+                ]
+            },
+            "normal-progress-bar": {
+                "attributes": {
+                    "skew": {
+                        "x": 23.0769,
+                        "y": 0
+                    },
+                    "scale": {
+                        "x": 0.65,
+                        "y": 1
+                    },
+                    "anchor-point": {
+                        "x": 0,
+                        "y": 0.5
+                    },
+                    "position": {
+                        "x": -230,
+                        "y": 80,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    }
+                }
+            },
+            "practice-mode-label": {
+                "attributes": {
+                    "anchor-point": {
+                        "x": 0,
+                        "y": 0.5
+                    },
+                    "position": {
+                        "x": -237,
+                        "y": 60,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    }
+                }
+            },
+            "practice-progress-label": {
+                "attributes": {
+                    "anchor-point": {
+                        "x": 1,
+                        "y": 0.5
+                    },
+                    "position": {
+                        "x": -17,
+                        "y": 60,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    }
+                },
+                "if": [
+                    {
+                        "statement": "int(level_practice_percent) >= 100",
+                        "attributes": {
+                            "color": {
+                                "r": 192,
+                                "g": 255,
+                                "b": 255
+                            }
+                        }
+                    }
+                ]
+            },
+            "practice-progress-bar": {
+                "attributes": {
+                    "skew": {
+                        "x": 23.0769,
+                        "y": 0
+                    },
+                    "scale": {
+                        "x": 0.65,
+                        "y": 1
+                    },
+                    "anchor-point": {
+                        "x": 0,
+                        "y": 0.5
+                    },
+                    "position": {
+                        "x": -242,
+                        "y": 40,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    }
+                }
+            }
+        },
+        "move": [
+            {
+                "node": "center-button-menu > play-button",
+                "parent": "{id}/play-button-menu",
+                "attributes": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    },
+                    "scale": 0,
+                    "base-scale": 1.2,
+                    "actions": [
+                        {
+                            "type": "Sequence",
+                            "actions": [
+                                {
+                                    "type": "ScaleTo",
+                                    "easing": "ElasticOut",
+                                    "easing-rate": 2,
+                                    "duration": 0.7,
+                                    "value": 1.2
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ],
+        "new": [
+            {
+                "type": "CCMenu",
+                "id": "play-button-menu",
+                "attributes": {
+                    "position": {
+                        "x": -120,
+                        "y": 0,
+                        "anchor": {
+                            "to": "center-right",
+                            "relative": "parent"
+                        }
+                    },
+                    "layout": {
+                        "axis": "row",
+                        "axis-alignment": "center",
+                        "cross-axis-alignment": "center"
+                    },
+                    "update-layout": "self"
+                }
+            },
+            {
+                "type": "CCLayer",
+                "id": "gameplay-tips",
+                "attributes": {
+                    "visible": false,
+                    "position": {
+                        "x": 120,
+                        "y": 0,
+                        "anchor": {
+                            "to": "center",
+                            "relative": "parent"
+                        }
+                    },
+                    "layout": {
+                        "axis": "row",
+                        "axis-alignment": "center",
+                        "cross-axis-alignment": "center",
+                        "flip-axis": true
+                    }
+                },
+                "children": {
+                    "new": [
+                        {
+                            "type": "CCLabelBMFont",
+                            "id": "gameplay-tips-header",
+                            "attributes": {
+                                "text": "Tip"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
